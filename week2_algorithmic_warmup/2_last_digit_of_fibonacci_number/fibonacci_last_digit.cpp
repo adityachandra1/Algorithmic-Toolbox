@@ -9,7 +9,7 @@ int fibonacci_fast_lastdigit(int n) {
     
     fib[0] = 0;
     fib[1] = 1;
-    ll m = 4;
+    ll m = 10;
     for (int i = 2; i <= n; i++) {
         fib[i] = (fib[i - 1] % m  + fib[i - 2]%m )%m;
     }
